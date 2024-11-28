@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-Data Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .bio-data-form {
+            width: 80%;
+            margin: 0 auto;
+            background-color: white;
+            border: 2px solid black;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            position: relative; /* For positioning the image */
+        }
+        h1 {
+            text-align: center;
+            font-size: 80px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+        .section-title {
+            font-size: 16px;
+            text-transform: uppercase;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin-top: 65px;
+            border: 1px solid black;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+        td {
+            padding: 8px;
+            vertical-align: top;
+        }
+        td.label {
+            width: 25%;
+            font-weight: bold;
+        }
+        .line-input {
+            border: none;
+            border-bottom: 1px solid #000;
+            width: 100%;
+            padding: 4px 0;
+            margin-bottom: 10px;
+            outline: none;
+        }
+        .image-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 180px; 
+            height: 180px; 
+            overflow: hidden;
+            border: 1px solid #ccc;
+            
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="bio-data-form">
+        <h1>Bio-Data</h1>
+
+        <!-- Image Container -->
+        <div class="image-container">
+            <img src="your-image-url.jpg" alt="Profile Image">
+        </div>
+
+        <!-- Personal Data Section -->
+        <div class="section-title">Personal Data</div>
+        <table>
+            <tr>
+                <td class="label">Position Desired:</td>
+                <td><input type="text" class="line-input" name="position"></td>
+                <td class="label">Date:</td>
+                <td><input type="date" class="line-input" name="date"></td>
+            </tr>
+            <tr>
+                <td class="label">Name:</td>
+                <td><input type="text" class="line-input" name="name"></td>
+                <td class="label">Gender:</td>
+                <td><input type="text" class="line-input" name="gender"></td>
+            </tr>
+            <tr>
+                <td class="label">City Address:</td>
+                <td><input type="text" class="line-input" name="city_address"></td>
+                <td class="label">Provincial Address:</td>
+                <td><input type="text" class="line-input" name="provincial_address"></td>
+            </tr>
+            <tr>
+                <td class="label">Telephone:</td>
+                <td><input type="text" class="line-input" name="telephone"></td>
+                <td class="label">Cellphone:</td>
+                <td><input type="text" class="line-input" name="cellphone"></td>
+            </tr>
+            <tr>
+                <td class="label">Email Address:</td>
+                <td><input type="email" class="line-input" name="email"></td>
+                <td class="label">Date of Birth:</td>
+                <td><input type="date" class="line-input" name="dob"></td>
+            </tr>
+            <tr>
+                <td class="label">Birth Place:</td>
+                <td><input type="text" class="line-input" name="birth_place"></td>
+                <td class="label">Citizenship:</td>
+                <td><input type="text" class="line-input" name="citizenship"></td>
+            </tr>
+            <tr>
+                <td class="label">Civil Status:</td>
+                <td><input type="text" class="line-input" name="civil_status"></td>
+                <td class="label">Weight:</td>
+                <td><input type="text" class="line-input" name="weight"></td>
+            </tr>
+            <tr>
+                <td class="label">Height:</td>
+                <td><input type="text" class="line-input" name="height"></td>
+                <td class="label">Religion:</td>
+                <td><input type="text" class="line-input" name="religion"></td>
+            </tr>
+            <tr>
+                <td class="label">Father's Name:</td>
+                <td><input type="text" class="line-input" name="father_name"></td>
+                <td class="label">Mother's Name:</td>
+                <td><input type="text" class="line-input" name="mother_name"></td>
+            </tr>
+            <tr>
+                <td class="label">Spouse:</td>
+                <td><input type="text" class="line-input" name="spouse"></td>
+                <td class="label">Occupation:</td>
+                <td><input type="text" class="line-input" name="occupation"></td>
+            </tr>
+            <tr>
+                <td class="label">Name of Children:</td>
+                <td><input type="text" class="line-input" name="children"></td>
+                <td class="label">Date of Birth:</td>
+                <td><input type="text" class="line-input" name="children_dob"></td>
+            </tr>
+            <tr>
+                <td class="label">Languages Spoken and Written:</td>
+                <td colspan="3"><input type="text" class="line-input" name="languages"></td>
+            </tr>
+            <tr>
+                <td class="label">Emergency Contact Person:</td>
+                <td><input type="text" class="line-input" name="emergency_contact"></td>
+                <td class="label">Contact Number:</td>
+                <td><input type="text" class="line-input" name="emergency_contact_number"></td>
+            </tr>
+        </table>
+
+        <!-- Educational Background Section -->
+        <div class="section-title">Educational Background</div>
+        <table>
+            <tr>
+                <td class="label">Elementary:</td>
+                <td><input type="text" class="line-input" name="elementary"></td>
+                <td class="label">Year Graduated:</td>
+                <td><input type="text" class="line-input" name="elementary_year"></td>
+            </tr>
+            <tr>
+                <td class="label">High School:</td>
+                <td><input type="text" class="line-input" name="highschool"></td>
+                <td class="label">Year Graduated:</td>
+                <td><input type="text" class="line-input" name="highschool_year"></td>
+            </tr>
+            <tr>
+                <td class="label">College:</td>
+                <td><input type="text" class="line-input" name="college"></td>
+                <td class="label">Year Graduated:</td>
+                <td><input type="text" class="line-input" name="college_year"></td>
+            </tr>
+            <tr>
+                <td class="label">Degree Received:</td>
+                <td colspan="3"><input type="text" class="line-input" name="degree"></td>
+            </tr>
+            <tr>
+                <td class="label">Special Skills:</td>
+                <td colspan="3"><textarea class="line-input" name="skills" style="height: 100px;"></textarea></td>
+            </tr>
+        </table>
+
+        <!-- Employment Record Section -->
+        <div class="section-title">Employment Record</div>
+        <table>
+                <td class="label">Company Name:</td>
+                <td><input type="text" class="line-input" name="company1"></td>
+                <td class="label">Position:</td>
+                <td><input type="text" class="line-input" name="position1"></td>
+                <td class="label">From:</td>
+                <td><input type="date" class="line-input" name="from1"></td>
+                <td class="label">To:</td>
+                <td><input type="date" class="line-input" name="to1"></td>
+        </table>
+        
+                <!-- Character Reference Section -->
+    <div class="section-title">Character Reference</div>
+    <tr>
+        <table>
+        <div class="line"><span>Name: __________________</span><span>Company: __________________</span></div>
+        <div class="line"><span>Position: __________________</span><span>Contact No.: __________________</span></div>
+        <div class="line"><span>Name: __________________</span><span>Company: __________________</span></div>
+        <div class="line"><span>Position: __________________</span><span>Contact No.: __________________</span></div>
+        </table>
+    </tr>
+    
+  	<div class="section">
+  	  <div class="line"><span>Res. Cert. No.: __________________</span></div>
+	  <div class="line"><span>Issued at: __________________</span></div>
+  	  <div class="line"><span>Issued on: __________________</span></div>
+  	  <div class="line"><span>SSS: __________________</span></div>
+  	  <div class="line"><span>TIN: __________________</span></div>
+  	  <div class="line"><span>NBI no.: __________________</span></div>
+  	  <div class="line"><span>Passport no.: __________________</span></div>
+    </div>
+    <br>
+    
+    <div class="line">I here certify the above information is true and correct to the best of my knowledge and belief. 
+        I also understand that any misinterpretation will be considered reason for withdrawal of an offer or subsequent dismissal if employed.
+    </div>
+
+    <!-- Signature Section -->
+    <div class="signature">
+        <h3>Applicant's Signature: __________________</h3>
+    </tr>
+    </div>

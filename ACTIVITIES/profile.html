@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Layout</title>
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #134853;
+}
+
+header {
+    background-color: #1e5a76;
+    color: white;
+    padding: 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+    color: black;
+}
+
+nav {
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    margin-left: 340px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.product-boxes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.product-box {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.product-box img {
+    width: 450px;
+    height: 450px; 
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+footer .footer-box {
+    background-color: #1e5a76;
+    color: black;
+    padding: 25px;
+    border-radius: 10px;
+    width: 96%;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo1 {
+    background-color: #23304a;
+    width: 100%;
+    padding: 10px 0;
+    padding-top: 10px;
+    color: #00f0c8;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.product-box {
+    perspective: 1000px;
+}
+
+.card {
+    width: 450px;
+    height: 450px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    cursor: pointer; /* Indicate interactivity */
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    backface-visibility: hidden;
+}
+
+.card .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1e5a76;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <span class="logo1">ELLA'S PORTFOLIO</span>
+</header>
+<header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="more.html">More</a>
+    </nav>
+</header>
+
+<div class="product-boxes">
+    <div class="product-box">
+        <div class="card">
+            <img src="PICTURE1.jpg" alt="PICTURE1">
+            <div class="back">In this picture, this represents one of the biggest dreams I was able to achieve 
+                before taking the step of getting my own motorcycle. It holds a special place in my journey, as it symbolizes the hard work, 
+                determination, and perseverance I put in to reach my goals. Achieving this milestone gave me the confidence and 
+                motivation to pursue even bigger aspirations, including owning a motorcycle, which was another dream I was working toward. 
+                It’s a reminder of how far I’ve come and what I’m capable of accomplishing through dedication and persistence.</div>
+        </div>
+    </div>
+    <div class="product-box">
+        <div class="card">
+            <img src="PICTURE2.jpg" alt="PICTURE2">
+            <div class="back">This was during my second year in college, and it marked the first time I ever joined a pageant. It was a 
+                completely new and exciting experience for me, stepping out of my comfort zone and embracing the challenge. I gave it my all, 
+                and to my surprise and delight, I earned the title of 2nd runner-up! It was such a proud moment, not just for the recognition but 
+                also for proving to myself that I could achieve something I had never imagined trying before. This experience taught me the value of 
+                confidence, hard work, and believing in my abilities, and it’s a memory I’ll cherish forever.</div>
+        </div>
+    </div>
+    <div class="product-box">
+        <div class="card">
+            <img src="PICTURE4.jpg" alt="PICTURE3">
+            <div class="back">In this picture, you can see the first significant investment I made in myself. It holds a special place in my heart 
+                because it represents the fruits of my hard work and determination as a working student during my first year in college. 
+                Balancing academics and a job was no easy feat, but I pushed through challenges and managed to save up for something meaningful that I could call my own. 
+                This achievement is a testament to my perseverance and commitment to building a better future for myself, and it makes me incredibly proud. It’s not just 
+                about the item I acquired—it’s about the journey, the sacrifices, and the sense of accomplishment that came with it.</div>
+        </div>
+    </div>
+</div>
+    <footer>
+        <div class="footer-box">
+            <p>Here's my achievements.</p>
+        </div>
+    </footer>
+</div>
+
+<script src="portfolio.js"></script>
+</body>
+</html>
