@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #134853;
+            color: white;
+        }
+
+        header {
+            background-color: #1e5a76;
+            color: white;
+            padding: 0 0 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            flex-grow: 1;
+            color: black;
+        }
+
+        nav {
+            width: 100%;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            margin-left: 340px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+
+        footer {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+        }
+
+        footer .footer-box {
+            background-color: #1e5a76;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            width: 96%;
+            margin: 0 auto;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo1 {
+            background-color: #23304a;
+            width: 100%;
+            padding: 10px 0;
+            padding-top: 10px;
+            color: #00f0c8;
+            text-align: center;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .intro-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 120px;
+            background-color: #0d2d3b;
+        }
+
+        .intro-section .text {
+            max-width: 50%;
+        }
+
+        .intro-section h1 {
+            font-size: 3rem;
+            color: #00f0c8;
+        }
+
+        .intro-section h2 {
+            font-size: 2rem;
+            margin: 10px 0;
+            color: #ffffff;
+        }
+
+        .intro-section p {
+            margin: 20px 0;
+            line-height: 1.5;
+            font-size: 1rem;
+        }
+
+        .intro-section img {
+            width: 290px;
+            height: 290px;
+            border-radius: 50%;
+            object-fit: cover; 
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .btn-group {
+            margin-top: 20px;
+        }
+
+        .btn-group a {
+            text-decoration: none;
+            color: white;
+            background-color: #00f0c8;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn-group a:hover {
+            background-color: #00a08a;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <span class="logo1">ELLA'S PORTFOLIO</span>
+</header>
+<header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="more.html">More</a>
+    </nav>
+</header>
+
+<div class="intro-section">
+    <div class="text">
+        <h1>Hi, It's Ella Mae</h1>
+        <h2>I'm a Student</h2>
+        <p>College student that studying in City of Malabon University. 
+        I'm taking Bachelor of Science in Information Technology and I'm 3rd year college now.</p>
+        <div class="btn-group">
+            <a href="profile.html">Start</a>
+        </div>
+    </div>
+    <img src="./images/asus.jpg" alt="ella's profile picture">
+</div>
+
+<footer>
+    <div class="footer-box">
+        <p>Welcome to my portfolio! I’m excited to showcase my work and creative journey.</p>
+    </div>
+</footer>
+
+</body>
+</html>
